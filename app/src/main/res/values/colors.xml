@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E2BCBF</color>
+    <color name="colorPrimaryDark">#C89BA5</color>
+    <color name="colorAccent">#ff9999</color>
+    <color name="crowded">#ff6600</color>
+    <color name="common">#ffe680</color>
+    <color name="extra">#99cc00</color>
+    <color name="mainYello">#FFC700</color>
+
+    <color name="colorbtn">#FFC90D</color>
+    <color name="colorPrimarys">#6200EE</color>
+    <color name="colorPrimaryDarks">#3700B3</color>
+    <color name="colorAccents">#03DAC5</color>
+</resources>

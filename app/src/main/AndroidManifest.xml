@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sungshin.rubusy">
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".StoreMainActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CategoryActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ReviewActivity" />
+        <activity android:name=".StoreDetailActivity" />
+        <activity android:name=".MyPageActivity" />
+        <activity android:name=".MyPageLoginOwnerActivity" />
+        <activity android:name=".MyPageLoginActivity" />
+        <activity android:name=".WriteReviewActivity" />
+        <activity android:name=".Register2Activity" />
+        <activity android:name=".Register1Activity" />
+        <activity android:name=".OperatorActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".FindPasActivity" />
+        <activity android:name=".FindLoginActivity" />
+        <activity android:name=".Categoryasian" />
+    </application>
+
+</manifest>

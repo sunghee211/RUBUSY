@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MyPageLoginOwnerActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/mypagelogowner_imageBut"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:src="@drawable/btn_back2"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="40dp"
+            android:text="@string/app_name"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginRight="20dp"
+            android:text="@string/hello_to_you"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:layout_width="120dp"
+            android:layout_height="90dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logout" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/myPageLogOwner_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            android:scrollbars="none"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout1"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/mypagelogowner_Now_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="현재 혼잡도"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/mypagelogOwne_radioBut1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#92D050"
+                android:text="여유"
+                android:layout_toRightOf="@+id/mypagelogowner_Now_condition"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+
+            <RadioButton
+                android:id="@+id/mypagelogOwne_radioBut2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/mypagelogOwne_radioBut1"
+                android:buttonTint="#FFC700"
+                android:text="보통"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/mypagelogOwne_radioBut3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#FF0000"
+                android:text="혼잡"
+                android:layout_toRightOf="@+id/mypagelogOwne_radioBut2"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout2"
+            android:layout_below="@+id/layout1"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+            <TextView
+                android:id="@+id/mypagelogowner_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="센서 사람수"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginRight="3dp"/>
+
+            <EditText
+                android:id="@+id/mypagelogowner_people_editText"
+                android:layout_width="54dp"
+                android:layout_height="36dp"
+                android:layout_toRightOf="@+id/mypagelogowner_people"
+                android:ems="10"
+                android:hint="인원수"
+                android:inputType="textPersonName"
+                android:textSize="12sp"
+                android:layout_marginRight="3dp"/>
+
+            <TextView
+                android:id="@+id/mypagelogowner_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="상태"
+                android:layout_toRightOf="@+id/mypagelogowner_people_editText"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginRight="3dp"/>
+
+            <EditText
+                android:id="@+id/mypagelogowner_condition_editText"
+                android:layout_width="54dp"
+                android:layout_height="36dp"
+                android:ems="10"
+                android:hint="혼잡도"
+                android:layout_toRightOf="@id/mypagelogowner_condition"
+                android:inputType="textPersonName"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout3"
+            android:layout_below="@+id/layout2"
+            android:gravity="center">
+            <Switch
+                android:id="@+id/mypagelogowner_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="영업"
+                android:textOff="종료"
+                android:textOn="중" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

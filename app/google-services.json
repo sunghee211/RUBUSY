@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "364510261892",
+    "firebase_url": "https://rubusy-c56ed.firebaseio.com",
+    "project_id": "rubusy-c56ed",
+    "storage_bucket": "rubusy-c56ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:364510261892:android:e887868828692c9627c8d1",
+        "android_client_info": {
+          "package_name": "com.sungshin.rubusy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "364510261892-21nmp2i5cv8ogpt5t0qi9uuv6boqtbqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX3zoxkh0Z8VGFblH0CKFzGMi6OC-mTwM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "364510261892-21nmp2i5cv8ogpt5t0qi9uuv6boqtbqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
