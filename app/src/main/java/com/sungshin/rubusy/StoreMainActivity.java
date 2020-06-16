@@ -67,6 +67,26 @@ public class StoreMainActivity extends AppCompatActivity {
 
             }
         });
+
+        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                //파이어베이스 데이터베이스의 데이터를 받아오는 곳
+                arrayList.clear();
+                for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
+                    StoreModel storeModel = snapshot.getValue(StoreModel.class);
+                    arrayList.add(storeModel); //담은 데이터들을 배열리스트에 넣고 리사이클러뷰로 보낼 준디
+                }
+                adapter.notifyDataSetChanged(); //리스트 저장 및 새로고침
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                //디비를 가져오던 중 에러 발생시
+                Log.e("MainActivity", String.valueOf(databaseError.toException())); //에러문 출력
+
+            }
+        });
         adapter = new storeAdapter(arrayList,this);
         recyclerView.setAdapter(adapter); //리사이클러뷰에 어댑터 연결
 

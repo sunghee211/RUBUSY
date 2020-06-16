@@ -30,7 +30,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="102dp"
                     android:layout_marginBottom="5dp"
-                    android:src="@drawable/a"
+                    android:src="@drawable/pasta"
                     android:scaleType="fitXY"/>
 
                 <ImageButton
@@ -49,10 +49,10 @@
                 android:id="@+id/store_detail_textview0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginVertical="5dp"
                 android:gravity="center_horizontal"
-                android:text="달콤 디저트"
-                android:textSize="36sp"
-                android:layout_marginVertical="5dp"/>
+                android:text="미오지오"
+                android:textSize="36sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
